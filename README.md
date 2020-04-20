@@ -1,3 +1,2 @@
-# MapLibrary
-Map library for android
+# MapExample
 <img src="https://github.com/Jaakkko/MapLibrary/blob/master/kartta.gif?raw=true">
