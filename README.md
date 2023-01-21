@@ -18,16 +18,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         mapView.mapUrls = arrayOf(object : TileDownloader.LoadURL {
-        	override val map: String = "landscape"
-        	override val compressFormat: Bitmap.CompressFormat = Bitmap.CompressFormat.PNG
-        	override val alpha: Float = 1.0f
+            override val map: String = "landscape"
+            override val compressFormat: Bitmap.CompressFormat = Bitmap.CompressFormat.PNG
+            override val alpha: Float = 1.0f
 
-        	override fun tileExists(layer: Int, row: Int, col: Int): Boolean = true
+            override fun tileExists(layer: Int, row: Int, col: Int): Boolean = true
 
-        	override fun getUrl(layer: Int, row: Int, col: Int): String {
-                val apiKey: String = <Insert your api key here>
-        		return "https://tile.thunderforest.com/$map/$layer/$col/$row.png?apikey=$apiKey"
-        	}
+            override fun getUrl(layer: Int, row: Int, col: Int): String {
+                val apiKey: String = "<Insert your api key here>"
+                return "https://tile.thunderforest.com/$map/$layer/$col/$row.png?apikey=$apiKey"
+            }
         })
     }
 }
