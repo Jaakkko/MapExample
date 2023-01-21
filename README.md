@@ -1,4 +1,5 @@
 Map engine written from scratch.
+<img src="https://github.com/Jaakkko/MapLibrary/blob/master/kartta.gif?raw=true">
 
 # Features
 - LRU cache
@@ -40,6 +41,3 @@ class MainActivity : AppCompatActivity() {
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android" />
 ```
-
-# GIF
-<img src="https://github.com/Jaakkko/MapLibrary/blob/master/kartta.gif?raw=true">
